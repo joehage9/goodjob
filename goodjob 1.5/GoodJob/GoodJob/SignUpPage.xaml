@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoodJob.SignUpPage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="SIGN UP"
+                   FontSize="70"
+                   FontFamily="Segoe UI"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   TextColor="{StaticResource Navy}"
+                  
+                   />
+
+            <Entry x:Name="Username_Entry"
+                   Placeholder="Username"/>
+
+            <Entry x:Name="Password_Entry"
+                   Placeholder="Password"
+                   IsPassword="True"
+                   />
+
+            <Entry x:Name="Password_Entry_2"
+                   Placeholder="Confirm Password"
+                   IsPassword="True"
+                   />
+
+            <Entry x:Name="Email_Entry"
+                   Placeholder="E-mail"
+                   />
+
+
+            <Button x:Name="Next_Button"
+                    Style="{StaticResource Key=ButtonNavy}"
+                    Text="Next Page"
+                    Clicked="Next_Button_Clicked"
+                    HorizontalOptions="Center"
+                    />
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoodJob.App">
+	<Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Navy">#123C69</Color>
+            <Color x:Key="White">#FFFFFF</Color>
+            <Color
+                x:Key="LowOpacityBlack">
+                <x:Arguments>
+                    <x:Double>0</x:Double>
+                    <!-- R/255 -->
+                    <x:Double>0</x:Double>
+                    <!-- G/255 -->
+                    <x:Double>0</x:Double>
+                    <!-- B/255 -->
+                    <x:Double>.4</x:Double>
+                    <!-- A: 0.0-1.0 -->
+                </x:Arguments>
+            </Color>
+            <Color
+                x:Key="LowOpacityWhite">
+                <x:Arguments>
+                    <x:Double>255</x:Double>
+                    <!-- R/255 -->
+                    <x:Double>255</x:Double>
+                    <!-- G/255 -->
+                    <x:Double>255</x:Double>
+                    <!-- B/255 -->
+                    <x:Double>.7</x:Double>
+                    <!-- A: 0.0-1.0 -->
+                </x:Arguments>
+            </Color>
+
+
+            <Style x:Key="ButtonWhite" TargetType="Button" >
+                <Setter Property="BackgroundColor" Value="{StaticResource White}"/>
+                <Setter Property="BorderWidth" Value="1"/>
+                <Setter Property="TextColor" Value="{StaticResource Navy}"/>
+                <Setter Property="WidthRequest" Value="288"/>
+                <Setter Property="HeightRequest" Value="43"/>
+                <Setter Property="BorderColor" Value="{StaticResource Navy}"/>
+                <Setter Property="BorderRadius" Value="15"/>
+            </Style>
+
+            <Style x:Key="ButtonNavy"  TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource Navy}"/>                
+                <Setter Property="BorderWidth" Value="1"/>
+                <Setter Property="WidthRequest" Value="288"/>
+                <Setter Property="HeightRequest" Value="43"/>
+                <Setter Property="TextColor" Value="{StaticResource White}"/>
+                <Setter Property="BorderColor" Value="{StaticResource Navy}"/>
+                <Setter Property="BorderRadius" Value="15"/>
+            </Style>
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

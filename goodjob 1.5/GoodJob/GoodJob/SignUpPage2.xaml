@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoodJob.SignUpPage2">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Profile"
+                   FontSize="70"
+                   FontFamily="Segoe UI"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   TextColor="{StaticResource Navy}"
+                  
+                   />
+
+            <Entry x:Name="FirstName_Entry"
+                   Placeholder="First Name"/>
+
+            <Entry x:Name="LastName_Entry"
+                   Placeholder="Last Name"
+                   
+                   />
+
+            <DatePicker x:Name="DoB_DatePicker"
+                       MinimumDate="1950/1/1"
+                        
+                    />
+
+            <Entry x:Name="Phone_Number_Entry"
+                   Keyboard="Numeric"
+                   
+                   />
+            
+            <Button x:Name="Register_Button"
+                    Clicked="Register_Button_Clicked"
+                    Text="SIGN UP"
+                    />
+            
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

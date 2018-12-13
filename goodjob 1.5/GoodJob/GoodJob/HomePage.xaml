@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoodJob.HomePage"
+            >
+  
+
+    <ContentPage.Content>
+       
+
+
+        <StackLayout Margin="20,40"  
+                     HorizontalOptions="Center" 
+                    >
+
+            <StackLayout Orientation="Horizontal" Margin="70,30,70,100">
+
+                <Label Text="G"
+                       Font="Robotto"
+                       FontAttributes="None"
+                       FontSize="130"
+                       TextColor="{StaticResource Key=Navy}"/>
+
+                <Label Text="ood"
+                       Font="Robotto"
+                       FontAttributes="Bold"
+                       FontSize="50"
+                       Margin="-5,60,0,0"
+                       TextColor="{StaticResource Key=Navy}"/>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal"
+                         Margin="120,-170,70,70">
+
+                <Label Text="J"
+                       Font="Robotto"
+                       FontAttributes="None"
+                       FontSize="100"
+                        TextColor="{StaticResource Key=Navy}"/>
+
+                <Label Text="ob"
+                       Font="Robotto"
+                       FontAttributes="Bold"
+                       FontSize="50"
+                       Margin="-5,35,0,0"
+                        TextColor="{StaticResource Key=Navy}"/>
+
+            </StackLayout>
+
+            <Label Text="Do You Need Any Help?"
+                   TextColor="{StaticResource Key=Navy}"
+                   FontFamily="Segoe UI"
+                   FontSize="30"
+                   HorizontalOptions="Center"
+                   />
+
+            <SearchBar Placeholder="Search"
+                       />
+            <Button x:Name="Browse_Button"
+                    Style="{StaticResource ButtonNavy}"
+                    Text="Browse"
+                    />
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

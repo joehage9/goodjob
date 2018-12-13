@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoodJob.MasterPage"
+             MasterBehavior="Popover"
+             
+                  >
+
+    <MasterDetailPage.Master>
+        <ContentPage Padding="10" BackgroundColor="{StaticResource Key=Navy}" Title="master" Icon="Hamburger_navy.png">
+            <ContentPage.Content>
+                                
+                <RelativeLayout Margin="20">                  
+
+                    <Button x:Name="Terms_Button" 
+                            Text="Terms"
+                            Clicked="Terms_Button_Clicked"/>
+
+                    <Button x:Name="Support_Button"
+                            Text="Support"
+                            Clicked="Support_Button_Clicked"
+                            />
+
+                    <Button x:Name="Settings_Button"
+                            Text="Settings"
+                            Clicked="Settings_Button_Clicked"/>
+
+                    <Button x:Name="Login_SignUp_Button"
+                            Text="Login\SignUp"
+                            Clicked="Login_SignUp_Button_Clicked"
+                            />
+
+                </RelativeLayout>
+                
+                
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    
+</MasterDetailPage>

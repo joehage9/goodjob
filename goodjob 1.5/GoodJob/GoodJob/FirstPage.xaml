@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoodJob.FirstPage">
+
+    <RelativeLayout VerticalOptions="Center" >
+
+        <Image x:Name="backgroundImage"
+            Aspect="AspectFill"
+        RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+        RelativeLayout.HeightConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+
+
+
+        <StackLayout Margin="20,40"  
+                     HorizontalOptions="Center" >
+
+            <StackLayout Orientation="Horizontal" Margin="70,30,70,100">
+
+                <Label Text="G"
+                       Font="Robotto"
+                       FontAttributes="None"
+                       FontSize="130"
+                       TextColor="{StaticResource White}"/>
+
+                <Label Text="ood"
+                       Font="Robotto"
+                       FontAttributes="Bold"
+                       FontSize="50"
+                       Margin="-5,60,0,0"
+                       TextColor="{StaticResource White}"/>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal"
+                         Margin="120,-170,70,70">
+
+                <Label Text="J"
+                       Font="Robotto"
+                       FontAttributes="None"
+                       FontSize="100"
+                        TextColor="{StaticResource White}"/>
+
+                <Label Text="ob"
+                       Font="Robotto"
+                       FontAttributes="Bold"
+                       FontSize="50"
+                       Margin="-5,35,0,0"
+                        TextColor="{StaticResource White}"/>
+
+            </StackLayout>
+
+            <Button x:Name="User_button"               
+                    Margin="0,100,0,0"
+                    Text="LOGIN AS USER"
+                    Style="{StaticResource ButtonWhite}"
+                   Clicked="User_button_Clicked"
+                    HorizontalOptions="Center"
+                    />
+
+            <Button x:Name="Guest_Button"  
+                    Margin="0,2,0,0"
+                    Text="LOGIN AS GUEST"
+                    Style="{StaticResource ButtonNavy}"
+                    Clicked="Guest_Button_Clicked"
+                    HorizontalOptions="Center"
+                    />
+
+
+        </StackLayout>
+    </RelativeLayout>
+
+
+</ContentPage>
